@@ -9,7 +9,7 @@ which ibmcloud > /dev/null 2>&1 || (echo "Install ibmcloud first before running 
 ibmcloud plugin install -f kubernetes-service
 
 # Log into the IBM Cloud
-ibmcloud login 
+ibmcloud login -r us-south
 
 # Delete your free cluster
 ibmcloud ks cluster rm --cluster ${NAME} --force-delete-storage -f
